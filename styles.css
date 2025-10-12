@@ -203,13 +203,26 @@ body {
 }
 
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
     margin: 0 auto;
     display: block;
     border: 3px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1), 
+                0 0 60px rgba(255, 255, 255, 0.05),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    transition: all 0.3s ease;
+    padding: 5px;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.2), 
+                0 0 80px rgba(255, 255, 255, 0.1),
+                inset 0 0 30px rgba(255, 255, 255, 0.15);
 }
 
 .profile-name {
@@ -641,6 +654,10 @@ body {
     max-width: 300px;
 }
 
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
 .project-item.hidden {
     display: none;
 }
@@ -650,6 +667,8 @@ body {
     display: inline-block;
     position: relative;
     width: fit-content;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .project-img {
@@ -661,12 +680,16 @@ body {
     background: transparent;
     transition: all 0.3s ease;
     cursor: pointer;
+    display: block;
 }
 
-.project-img:hover {
+.project-image:hover .project-img {
     transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     filter: brightness(1.1);
+}
+
+.project-image:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .project-content {
@@ -717,10 +740,10 @@ body {
 }
 
 .eye-button:hover {
-    background: transparent;
+    background: white;
     transform: scale(1.2);
     color: black;
-    text-shadow: 2px 2px 6px rgba(255, 255, 255, 1);
+    backdrop-filter: blur(10px);
 }
 
 /* PDF Modal */
@@ -916,8 +939,8 @@ body {
     }
     
     .profile-img {
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
     }
     
     .info-section {
@@ -941,6 +964,16 @@ body {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+        justify-items: start;
+    }
+    
+    .project-item {
+        align-items: flex-start;
+    }
+    
+    .project-content {
+        align-items: flex-start;
+        text-align: left;
     }
     
     .project-img {
@@ -1029,8 +1062,8 @@ body {
     }
     
     .profile-img {
-        width: 80px;
-        height: 80px;
+        width: 110px;
+        height: 110px;
     }
     
     .contact-item {
@@ -1074,6 +1107,17 @@ body {
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 12px;
+        justify-items: start;
+    }
+    
+    .project-item {
+        max-width: 100%;
+        align-items: flex-start;
+    }
+    
+    .project-content {
+        align-items: flex-start;
+        text-align: left;
     }
     
     .project-img {
@@ -1083,6 +1127,11 @@ body {
     
     .project-title {
         font-size: 1rem;
+        text-align: left;
+    }
+    
+    .project-category {
+        text-align: left;
     }
     
     .section-main-title {
