@@ -8,8 +8,7 @@ This guide explains how to organize and add assets to your portfolio website.
 assets/
 ├── images/
 │   ├── profile/        # Your profile photos
-│   ├── projects/       # Project images and documents
-│   └── icons/          # UI icons and graphics
+│   └── projects/       # Project images and documents
 └── resume/            # CV/Resume files
 ```
 
@@ -27,10 +26,6 @@ assets/
 - **Recommended size**: 600x400px or 16:9 aspect ratio
 - **Naming convention**: `project1.jpg`, `project2.jpg`, etc.
 
-### Icons
-- **Location**: `assets/images/icons/`
-- **Supported formats**: SVG, PNG
-- **Recommended size**: 24x24px, 32x32px, or 48x48px
 
 ## 📄 Adding New Projects
 

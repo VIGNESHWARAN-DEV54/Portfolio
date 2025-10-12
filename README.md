@@ -25,17 +25,10 @@ port/
 ├── assets/
 │   ├── images/
 │   │   ├── profile/        # Profile images
-│   │   │   ├── profile.svg
 │   │   │   └── profile.jpg
 │   │   ├── projects/       # Project images and documents
 │   │   │   ├── project1.jpg
-│   │   │   ├── project1.pdf
-│   │   │   ├── project2.svg
-│   │   │   ├── project3.svg
-│   │   │   ├── project4.svg
-│   │   │   ├── project5.svg
-│   │   │   └── project6.svg
-│   │   └── icons/          # Icons and UI elements
+│   │   │   └── project1.pdf
 │   └── resume/             # CV/Resume files
 │       └── VIGNESHWARAN_CV.pdf
 ```

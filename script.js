@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Preload critical images for smoother experience
     const criticalImages = [
-        'assets/images/profile/profile.svg',
+        'assets/images/profile/profile.jpg',
         'assets/images/projects/project1.jpg'
     ];
     
