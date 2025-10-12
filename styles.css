@@ -1106,32 +1106,42 @@ body {
     
     .projects-grid {
         grid-template-columns: 1fr;
-        gap: 12px;
-        justify-items: start;
+        gap: 15px;
+        justify-items: center;
     }
     
     .project-item {
         max-width: 100%;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
     }
     
     .project-content {
-        align-items: flex-start;
-        text-align: left;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .project-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
     
     .project-img {
-        width: 120px;
-        height: 100px;
+        width: 150px;
+        height: 120px;
     }
     
     .project-title {
         font-size: 1rem;
-        text-align: left;
+        text-align: center;
+        margin-top: 8px;
     }
     
     .project-category {
-        text-align: left;
+        text-align: center;
+        margin-top: 4px;
     }
     
     .section-main-title {
