@@ -34,17 +34,15 @@ assets/
 3. **Update HTML** in `index.html`:
    ```html
    <div class="project-item" data-category="web">
-       <div class="project-card">
-           <div class="project-image">
-               <img src="assets/images/projects/your-project.jpg" alt="Your Project" class="project-img">
-               <div class="project-overlay">
-                   <button class="view-btn" onclick="openImageModal('assets/images/projects/your-project.pdf', 'Your Project')">View Details</button>
-               </div>
-           </div>
-           <div class="project-info">
-               <h3 class="project-title">Your Project</h3>
-               <p class="project-description">Project description here</p>
-           </div>
+       <div class="project-image">
+           <img src="assets/images/projects/your-project.jpg" alt="Your Project" class="project-img">
+           <button class="eye-button" onclick="openImageModal('assets/images/projects/your-project.pdf', 'Your Project')">
+               <i class="bi bi-eye-fill"></i>
+           </button>
+       </div>
+       <div class="project-content">
+           <h3 class="project-title">Your Project</h3>
+           <span class="project-category">Web Application</span>
        </div>
    </div>
    ```
@@ -54,7 +52,10 @@ assets/
 Update the skills section in `index.html`:
 ```html
 <div class="skill-item">
-    <div class="skill-name">Your Skill</div>
+    <span class="skill-name">Category Name</span>
+    <div class="skills-text">
+        <span class="skill-tag">New Skill</span>
+    </div>
 </div>
 ```
 
@@ -63,11 +64,13 @@ Update the skills section in `index.html`:
 Update the education section in `index.html`:
 ```html
 <div class="education-item">
-    <div class="education-degree">Your Degree</div>
-    <div class="education-year">2020-2024</div>
-    <div class="education-college">Your College</div>
-    <div class="education-university">Your University</div>
-    <div class="education-cgpa">8.5/10</div>
+    <div class="education-header">
+        <h3 class="degree">Degree Name</h3>
+        <span class="year">2024 - 2026</span>
+    </div>
+    <span class="college">College Name</span>
+    <span class="university">University</span>
+    <span class="cgpa">Grade/CGPA</span>
 </div>
 ```
 
