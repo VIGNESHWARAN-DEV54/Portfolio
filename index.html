@@ -70,7 +70,9 @@
                 <div class="nav-container">
                     <ul class="nav-links">
                         <li><a href="#about" class="nav-link active">About</a></li>
-                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+
                     </ul>
                 </div>
             </nav>
@@ -197,36 +199,76 @@
                                 </div>
                             </div>
 
+                        </section>
+
+                        <!-- Skills Section -->
+                        <section id="skills" class="section">
                             <div class="info-section">
                                 <h2 class="section-title">Skills</h2>
-                                <div class="skills-container">
-                                    <div class="skills-grid">
-                                        <div class="skill-item">
-                                            <span class="skill-name">DevOps Core & Cloud</span>
-                                            <div class="skills-text">
-                                                <span class="skill-tag">Linux (RHEL/Ubuntu)</span>
-                                                <span class="skill-tag">Docker</span>
-                                                <span class="skill-tag">Kubernetes (Basics)</span>
-                                                <span class="skill-tag">AWS (Foundation)</span>
-                                                <span class="skill-tag">Jenkins (CI/CD)</span>
-                                            </div>
+                                <div class="detailed-skills">
+                                    <!-- Linux Skill -->
+                                    <div class="skill-row">
+                                        <div class="skill-icon linux">
+                                            <i class="bi bi-terminal-fill"></i>
                                         </div>
-                                        <div class="skill-item">
-                                            <span class="skill-name">Scripting & Automation</span>
-                                            <div class="skills-text">
-                                                <span class="skill-tag">Python Scripting</span>
-                                                <span class="skill-tag">Bash Shell</span>
-                                                <span class="skill-tag">Git & GitHub</span>
-                                                <span class="skill-tag">Ansible (Basics)</span>
-                                            </div>
+                                        <div class="skill-details">
+                                            <h3 class="skill-title">Linux Administration (RHEL/Ubuntu)</h3>
+                                            <ul class="skill-sublist">
+                                                <li>User & Group Management</li>
+                                                <li>File Permissions & ACLs</li>
+                                                <li>Package Management (Yum/Apt)</li>
+                                                <li>Process Management & Monitoring</li>
+                                                <li>SSH Security & Key Management</li>
+                                            </ul>
                                         </div>
-                                        <div class="skill-item">
-                                            <span class="skill-name">Web & Database</span>
-                                            <div class="skills-text">
-                                                <span class="skill-tag">HTML5/CSS3</span>
-                                                <span class="skill-tag">MongoDB</span>
-                                                <span class="skill-tag">SQL</span>
-                                            </div>
+                                    </div>
+
+                                    <!-- AWS Skill -->
+                                    <div class="skill-row">
+                                        <div class="skill-icon aws">
+                                            <i class="bi bi-cloud-fill"></i>
+                                        </div>
+                                        <div class="skill-details">
+                                            <h3 class="skill-title">AWS Cloud Foundation</h3>
+                                            <ul class="skill-sublist">
+                                                <li>EC2 Instance Management</li>
+                                                <li>S3 Storage & Lifecycle Policies</li>
+                                                <li>IAM Roles & Policies</li>
+                                                <li>VPC Networking (Subnets, Route Tables)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- DevOps Tools -->
+                                    <div class="skill-row">
+                                        <div class="skill-icon devops">
+                                            <i class="bi bi-gear-wide-connected"></i>
+                                        </div>
+                                        <div class="skill-details">
+                                            <h3 class="skill-title">DevOps Tools & Automation</h3>
+                                            <ul class="skill-sublist">
+                                                <li><strong>Docker:</strong> Containerization, Dockerfiles, Compose</li>
+                                                <li><strong>Kubernetes:</strong> Pods, Deployments, Services (Basics)
+                                                </li>
+                                                <li><strong>Jenkins:</strong> CI/CD Pipelines, Freestyle Jobs</li>
+                                                <li><strong>Git:</strong> Version Control, Branching Strategies</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Scripting -->
+                                    <div class="skill-row">
+                                        <div class="skill-icon script">
+                                            <i class="bi bi-code-slash"></i>
+                                        </div>
+                                        <div class="skill-details">
+                                            <h3 class="skill-title">Scripting & Web Basics</h3>
+                                            <ul class="skill-sublist">
+                                                <li>Bash Shell Scripting (Automation)</li>
+                                                <li>Python (Boto3, Scripting)</li>
+                                                <li>HTML5, CSS3, Basic JavaScript</li>
+                                                <li>Database: MongoDB, SQL Basics</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -235,124 +277,10 @@
 
                         <!-- Projects Section -->
                         <section id="projects" class="section">
-                            <h2 class="section-main-title">My Projects</h2>
-
-                            <!-- Filter Buttons -->
-                            <div class="filter-container">
-                                <button class="filter-btn active" data-filter="all">All</button>
-                                <button class="filter-btn" data-filter="web">Web</button>
-                                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                                <button class="filter-btn" data-filter="ui">UI/UX</button>
-                            </div>
-
-                            <!-- Projects Grid -->
-                            <div class="projects-grid">
-                                <!-- Web Applications -->
-                                <div class="project-item" data-category="web">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project1.jpg" alt="E-Commerce Platform"
-                                            class="project-img">
-                                        <button class="eye-button"
-                                            onclick="openImageModal('assets/images/projects/project1.pdf', 'E-Commerce Platform')">
-                                            <i class="bi bi-eye-fill"></i>
-                                        </button>
-                                    </div>
-                                    <div class="project-content">
-                                        <h3 class="project-title">E-Commerce Platform</h3>
-                                        <span class="project-category">Web Application</span>
-                                    </div>
-                                </div>
-
-                                <div class="project-item" data-category="web">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project1.jpg" alt="Task Management App"
-                                            class="project-img">
-                                        <button class="eye-button"
-                                            onclick="openImageModal('assets/images/projects/project1.pdf', 'Task Management App')">
-                                            <i class="bi bi-eye-fill"></i>
-                                        </button>
-                                    </div>
-                                    <div class="project-content">
-                                        <h3 class="project-title">Task Management App</h3>
-                                        <span class="project-category">Web Application</span>
-                                    </div>
-                                </div>
-
-                                <div class="project-item" data-category="web">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project1.jpg" alt="Weather Dashboard"
-                                            class="project-img">
-                                        <button class="eye-button"
-                                            onclick="openImageModal('assets/images/projects/project1.pdf', 'Weather Dashboard')">
-                                            <i class="bi bi-eye-fill"></i>
-                                        </button>
-                                    </div>
-                                    <div class="project-content">
-                                        <h3 class="project-title">Weather Dashboard</h3>
-                                        <span class="project-category">Web Application</span>
-                                    </div>
-                                </div>
-
-                                <!-- Mobile Applications -->
-                                <div class="project-item" data-category="mobile">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project1.jpg" alt="Fitness Tracker"
-                                            class="project-img">
-                                        <button class="eye-button"
-                                            onclick="openImageModal('assets/images/projects/project1.pdf', 'Fitness Tracker')">
-                                            <i class="bi bi-eye-fill"></i>
-                                        </button>
-                                    </div>
-                                    <div class="project-content">
-                                        <h3 class="project-title">Fitness Tracker</h3>
-                                        <span class="project-category">Mobile Application</span>
-                                    </div>
-                                </div>
-
-                                <div class="project-item" data-category="mobile">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project1.jpg" alt="Food Delivery App"
-                                            class="project-img">
-                                        <button class="eye-button"
-                                            onclick="openImageModal('assets/images/projects/project1.pdf', 'Food Delivery App')">
-                                            <i class="bi bi-eye-fill"></i>
-                                        </button>
-                                    </div>
-                                    <div class="project-content">
-                                        <h3 class="project-title">Food Delivery App</h3>
-                                        <span class="project-category">Mobile Application</span>
-                                    </div>
-                                </div>
-
-                                <div class="project-item" data-category="mobile">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project1.jpg" alt="Social Media App"
-                                            class="project-img">
-                                        <button class="eye-button"
-                                            onclick="openImageModal('assets/images/projects/project1.pdf', 'Social Media App')">
-                                            <i class="bi bi-eye-fill"></i>
-                                        </button>
-                                    </div>
-                                    <div class="project-content">
-                                        <h3 class="project-title">Social Media App</h3>
-                                        <span class="project-category">Mobile Application</span>
-                                    </div>
-                                </div>
-
-                                <!-- UI Design -->
-                                <div class="project-item" data-category="ui">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project1.jpg" alt="Dashboard Design"
-                                            class="project-img">
-                                        <button class="eye-button"
-                                            onclick="openImageModal('assets/images/projects/project1.pdf', 'Dashboard Design')">
-                                            <i class="bi bi-eye-fill"></i>
-                                        </button>
-                                    </div>
-                                    <div class="project-content">
-                                        <h3 class="project-title">Dashboard Design</h3>
-                                        <span class="project-category">UI Design</span>
-                                    </div>
+                            <div class="info-section">
+                                <h2 class="section-title">Projects</h2>
+                                <div id="projects-container" class="projects-grid">
+                                    <!-- Projects will be injected here -->
                                 </div>
                             </div>
                         </section>
