@@ -232,13 +232,13 @@ function showLoginModal() {
                 box-sizing: border-box; /* Ensure padding doesn't affect width */
             }
             .login-box input:focus {
-                border-color: #3b82f6;
+                border-color: #10b981;
             }
             .login-box button {
                 padding: 12px;
                 border: none;
                 border-radius: 12px;
-                background: linear-gradient(135deg, #3b82f6, #2563eb);
+                background: linear-gradient(135deg, #10b981, #059669);
                 color: white;
                 font-weight: 600;
                 cursor: pointer;
@@ -247,7 +247,7 @@ function showLoginModal() {
             }
             .login-box button:hover {
                 transform: translateY(-2px);
-                box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+                box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
             }
             @keyframes slideUp {
                 from { opacity: 0; transform: translateY(20px); }
@@ -351,11 +351,11 @@ function showAdminToolbar() {
                 background: rgba(255,255,255,0.1);
             }
             #editToggle {
-                background: #3b82f6;
-                box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+                background: #10b981;
+                box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
             }
             #editToggle:hover {
-                background: #2563eb;
+                background: #059669;
             }
             .danger-btn:hover {
                 background: rgba(239, 68, 68, 0.2) !important;
@@ -367,15 +367,15 @@ function showAdminToolbar() {
             
             /* Editing Highlights */
             .editable-highlight {
-                outline: 2px dashed rgba(59, 130, 246, 0.3);
+                outline: 2px dashed rgba(16, 185, 129, 0.3);
                 outline-offset: 4px;
                 border-radius: 6px;
                 transition: all 0.2s;
                 position: relative;
             }
             .editable-highlight:hover, .editable-highlight:focus {
-                outline: 2px solid #3b82f6;
-                background: rgba(59, 130, 246, 0.05);
+                outline: 2px solid #10b981;
+                background: rgba(16, 185, 129, 0.05);
             }
             
             /* Admin Buttons */
@@ -450,7 +450,7 @@ function showAdminToolbar() {
 
             document.body.setAttribute('data-editing', 'false');
             btn.innerHTML = `<i class="bi bi-pencil-square"></i> <span>Edit</span>`;
-            btn.style.background = "#3b82f6";
+            btn.style.background = "#10b981";
         } else {
             // --- ENABLE EDITING ---
 
@@ -523,7 +523,7 @@ function injectAdminControls() {
                     <span contenteditable="true" style="background:#f3f4f6; padding:4px 12px; border-radius:100px; font-size:0.8rem; color:#4b5563;">Tag 1</span>
                     <span contenteditable="true" style="background:#f3f4f6; padding:4px 12px; border-radius:100px; font-size:0.8rem; color:#4b5563;">Tag 2</span>
                 </div>
-                <button onclick="window.open('#', '_blank')" style="margin-top:15px; padding:8px 16px; background:#3b82f6; color:white; border:none; border-radius:8px; cursor:pointer; font-size:0.9rem;">View Project</button>
+                <button onclick="window.open('#', '_blank')" style="margin-top:15px; padding:8px 16px; background:#10b981; color:white; border:none; border-radius:8px; cursor:pointer; font-size:0.9rem;">View Project</button>
             </div>`;
         projectsContainer.insertAdjacentHTML('beforeend', template);
         injectAdminControls();

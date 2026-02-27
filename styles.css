@@ -1,9 +1,9 @@
 /* Root Variables */
 :root {
-    --primary-color: #8b5cf6;
-    /* Violet 500 */
-    --secondary-color: #a78bfa;
-    /* Violet 400 */
+    --primary-color: #10b981;
+    /* Emerald 500 */
+    --secondary-color: #34d399;
+    /* Emerald 400 */
     --bg-dark: #ffffff;
     --bg-darker: #ffffff;
     /* Pure White */
@@ -16,9 +16,9 @@
     --gradient-main: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     --transition-speed: 0.3s;
     --font-heading: 'Inter', sans-serif;
-    --shadow-soft: 0 10px 40px rgba(139, 92, 246, 0.15);
-    /* Violet shadow */
-    --shadow-glow: 0 0 20px rgba(139, 92, 246, 0.3);
+    --shadow-soft: 0 10px 40px rgba(16, 185, 129, 0.15);
+    /* Green shadow */
+    --shadow-glow: 0 0 20px rgba(16, 185, 129, 0.3);
 }
 
 * {
@@ -33,7 +33,7 @@ html {
 
 body {
     font-family: var(--font-heading);
-    background: linear-gradient(-45deg, #ffffff, #f3e8ff, #e9d5ff, #ffffff);
+    background: linear-gradient(-45deg, #ffffff, #f0fdf4, #dcfce7, #ffffff);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     min-height: 100vh;
@@ -251,12 +251,12 @@ body {
 .nav-link.active {
     color: #fff;
     background: var(--gradient-main);
-    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 2px 10px rgba(16, 185, 129, 0.4);
 }
 
 .nav-link:hover:not(.active) {
     color: var(--primary-color);
-    background: rgba(139, 92, 246, 0.1);
+    background: rgba(16, 185, 129, 0.1);
 }
 
 /* Content Area */
@@ -322,7 +322,7 @@ body {
 .profile-img:hover {
     transform: scale(1.05);
     /* border-color: var(--primary-color); Removed as per request */
-    box-shadow: 0 0 35px rgba(139, 92, 246, 0.6);
+    box-shadow: 0 0 35px rgba(16, 185, 129, 0.6);
 }
 
 .profile-name {
@@ -423,12 +423,12 @@ body {
     border-radius: 30px;
     font-weight: 600;
     transition: all var(--transition-speed);
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
 }
 
 .cv-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(118, 75, 162, 0.5);
+    box-shadow: 0 6px 20px rgba(5, 150, 105, 0.5);
 }
 
 /* Info Column */
@@ -505,7 +505,7 @@ body {
     font-size: 0.85rem;
     padding: 2px 10px;
     border-radius: 12px;
-    background: rgba(59, 130, 246, 0.1);
+    background: rgba(16, 185, 129, 0.1);
     color: var(--text-muted);
 }
 
@@ -521,7 +521,7 @@ body {
 .cgpa {
     display: inline-block;
     padding: 4px 12px;
-    background: rgba(102, 126, 234, 0.15);
+    background: rgba(16, 185, 129, 0.15);
     color: var(--primary-color);
     border-radius: 12px;
     font-size: 0.9rem;
@@ -647,7 +647,7 @@ body {
     background: var(--gradient-main);
     color: #fff;
     border-color: transparent;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
 }
 
 .projects-grid {
@@ -817,7 +817,7 @@ body {
     .navbar {
         padding: 1rem;
         justify-content: center;
-        background: rgba(26, 26, 46, 0.95);
+        background: rgba(255, 255, 255, 0.95);
         /* Better readability on mobile */
         backdrop-filter: blur(10px);
         margin: 0 -1rem;
@@ -888,7 +888,7 @@ body {
 .skill-row:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-soft);
-    border-color: rgba(139, 92, 246, 0.2);
+    border-color: rgba(16, 185, 129, 0.2);
 }
 
 .skill-icon {
